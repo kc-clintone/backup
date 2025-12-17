@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sidebar";
 import { Link, useLocation } from "react-router-dom";
 import { Settings } from "lucide-react";
+import { SidebarTrigger } from "./ui/sidebar";
 
 const items = navigationItems;
 
@@ -24,7 +25,7 @@ export default function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
-        <div className="flex items-center gap-2 justify-center align-middle px-2">
+        <div className="flex items-center gap-2 justify-center align-middle px-2 sm:flex-col">
           <div className="flex items-center justify-center w-full text-blue-950 py-4">
             {open ? (
               <span className="text-lg font-bold font-adumu">SANAA</span>
@@ -32,6 +33,7 @@ export default function AppSidebar() {
               <span className="text-lg font-bold font-adumu m-2">S</span>
             )}
           </div>
+          <SidebarTrigger />
         </div>
       </SidebarHeader>
       <SidebarContent>
