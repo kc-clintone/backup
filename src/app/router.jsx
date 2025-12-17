@@ -8,10 +8,6 @@ import ProtectedRoute from "../components/ProtectedRoute";
 import PublicRoute from "../components/PublicRoute";
 import NotFoundPage from "@/pages/shared/NotFoundPage";
 import FeedPage from "@/pages/shared/FeedPage";
-import EventsPage from "@/pages/fan/EventsPage";
-import DiscoverPage from "@/pages/fan/DiscoverPage";
-import FollowingPage from "../pages/shared/FollowingPage";
-import DummyPage from "@/pages/dummy/DummyPage";
 
 // --- TODO: Hello guys, here is where we will put all our pages/routes from now on
 // --- follow the structure/style below to add a route/page
@@ -45,14 +41,7 @@ export const router = createBrowserRouter([
       </ProtectedRoute>
     ),
   },
-  {
-    path: "/following",
-    element: (
-      <ProtectedRoute>
-        <FollowingPage />
-      </ProtectedRoute>
-    ),
-  },
+
   {
     path: "/settings",
     element: (
@@ -66,30 +55,6 @@ export const router = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <FeedPage />
-      </ProtectedRoute>
-    ),
-  },
-  {
-    path: "/events",
-    element: (
-      <ProtectedRoute>
-        <EventsPage />
-      </ProtectedRoute>
-    ),
-  },
-  {
-    path: "/discover",
-    element: (
-      <ProtectedRoute>
-        <DiscoverPage />
-      </ProtectedRoute>
-    ),
-  },
-  {
-    path: "/dummy",
-    element: (
-      <ProtectedRoute>
-        <DummyPage  />
       </ProtectedRoute>
     ),
   },
