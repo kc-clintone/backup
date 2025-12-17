@@ -10,21 +10,16 @@ export const navigationItems = [
   {
     title: "Discover",
     icon: SearchIcon,
-    href: "/discover",
+    href: "/",
   },
   {
     title: "Following",
     icon: Users,
-    href: "/following",
+    href: "/",
   },
   {
     title: "Events",
     icon: CalendarClock,
-    href: "/events",
-  },
-  {
-    title: "Dummy",
-    icon: Calendar1Icon,
-    href: "/dummy",
+    href: "/",
   },
 ];
